@@ -1,0 +1,6 @@
+node_modules
+client/public/bundle.js
+client/public/bundle.js.map
+client/public/style.css.map
+client/public/style.css
+.idea

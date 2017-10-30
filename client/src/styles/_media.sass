@@ -1,0 +1,43 @@
+@import "_vars.sass"
+
+@media only screen and (max-width: 1024px)
+	.wrap
+		&-filter
+			float: none
+			width: 300px
+			max-width: 300px
+			margin: 0 auto
+		&-tickets
+			margin: 14px auto
+			float: none
+
+@media only screen and (max-width: 730px)
+	.ticket
+		&__left
+			float: none
+			border-bottom: 1px solid $border-color
+			border-right: none
+		&__right
+			justify-content: center
+	.wrap-tickets
+		width: 80%
+
+@media only screen and (max-width: 630px)
+	.ticket
+		&__left
+			padding: 10px 20px 10px
+		&__right
+			padding: 8px 0 8px
+		&__to,
+		&__transfer,
+		&__from
+			width: 100%
+			text-align: center
+		&__from
+			margin-bottom: 18px
+		&__to
+			margin-top: 18px
+		&__left
+			img
+				display: block
+				margin: 0 auto 4px
