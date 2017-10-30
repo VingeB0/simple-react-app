@@ -11,9 +11,9 @@ class App extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			tickets: [], // массив в который пугшутся с жсон файла данные и из него же делается выборка в filteedtickets
-			ticketsFiltered: [], // массив тикетов которые рендерятся и копируются из массива tickets
-			filterInputs: [ // массив чекбоксов которые рендерятся
+			tickets: [],
+			ticketsFiltered: [],
+			filterInputs: [
 				{
 					checked: false,
 					text: 'Все',
@@ -88,12 +88,10 @@ class App extends React.Component {
 					}
 				} else {
 					this.setState((prevState) => {
-						//all checkboxes get false
 						let newFilterInputs = prevState.filterInputs.slice();
 						for (let i = 0, l = this.state.filterInputs.length; i < l; i++) {
 							newFilterInputs[i].checked = false;
 						}
-						//ticketsFiltered rendering array leng is zero
 						let newTicketsFiltered = prevState.ticketsFiltered.slice();
 						newTicketsFiltered.length = 0;
 						return {
